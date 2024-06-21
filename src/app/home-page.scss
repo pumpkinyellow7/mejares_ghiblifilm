@@ -1,0 +1,46 @@
+.home-page {
+  text-align: center;
+  padding: 20px;
+  background-image: url('/assets/hak.jfif'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+
+  .films-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+
+    .film-item {
+      background: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        object-fit: cover;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #555;
+      }
+    }
+  }
+}
